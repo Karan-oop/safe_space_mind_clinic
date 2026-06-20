@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services — The Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="about-us-page">
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="AboutUs.html" class="nav-link active">About</a>
+                <a href="#" class="nav-link">Our Services</a>
+                <a href="blog.html" class="nav-link">Blogs</a>
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+            </div>
+            <a href="index.html" class="nav-logo" aria-label="The Practice home">
+                <img src="assets/images/logo.webp" alt="The Practice" class="nav-logo-img" />
+            </a>
+            <div class="nav-right">
+                <a href="ContactUs.html" class="btn-nav">Book an Appointment</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-panel">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="mobile-menu-links">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="AboutUs.html" class="mobile-nav-link">About Us</a>
+                <a href="services.html" class="mobile-nav-link">Our Services</a>
+                <a href="blog.html" class="mobile-nav-link">Blogs</a>
+                <a href="ContactUs.html" class="mobile-nav-link">Contact Us</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="index.html#contact" class="mobile-nav-cta">Book an Appointment </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE BANNER -->
+    <section id="page-banner" class="reveal">
+        <div class="page-banner-container">
+            <div class="page-banner-inner">
+                <div class="banner-left">
+                    <h1 class="banner-title">Services</h1>
+                    <a href="index.html" class="nav-link"class="banner-breadcrumbs">Home &nbsp;/&nbsp; Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Page Service Section Start -->
+    <div class="page-service">
+        <div class="container">
+            <div class="row">
+    
+                <!-- 1. Pediatric Care -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M9 12c0 1.657-1.343 3-3 3S3 13.657 3 12s1.343-3 3-3 3 1.343 3 3z" />
+                            <path d="M20 7c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2z" />
+                            <path d="M12 3c0 1.105-.895 2-2 2S8 4.105 8 3s.895-2 2-2 2 .895 2 2z" />
+                            <path d="M6 15v4m0 0h3m-3 0H3" />
+                            <path d="M18 9v3m0 0l2 2m-2-2l-2 2" />
+                            <path d="M10 5l2 4h4" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Anxiety & Depression </a></h2>
+                            <p>Professional care for anxiety, depression, and emotional well-being.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 2. Family Medicine -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">OCD </a></h2>
+                            <p>Effective treatment for obsessive thoughts and repetitive compulsive behaviors.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 3. Preventive Healthcare -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Schizophrenia</a></h2>
+                            <p>Care and support for managing symptoms and daily life challenges.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 4. Neurology Treatment -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.14z" />
+                            <path
+                                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.14z" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Bipolar Disorder </a></h2>
+                            <p>Expert care to stabilize mood swings and support recovery.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 5. Dermatology Services -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            <path d="M12 8v4m0 0v4m0-4h4m-4 0H8" opacity="0.5" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Addiction Treatment </a></h2>
+                            <p>Professional guidance for overcoming substance, gaming, and gambling addictions.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 6. Diagnostic Imaging -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                            <path d="M12 8h4m-2-2v4" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Migraine </a></h2>
+                            <p>Treatment for frequent migraines and ongoing headache problems.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 7. Laboratory Testing -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M9 3H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3" />
+                            <path d="M9 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2H9V3z" />
+                            <path d="M9 12h6M9 16h4" />
+                            <circle cx="9" cy="12" r="0.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Epilepsy (Seizures) </a></h2>
+                            <p>Specialized care for managing seizures and improving quality of life.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 8. Mental Health Support -->
+                <div class="service-item">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                    </div>
+                    <div class="service-item-body">
+                        <div class="service-item-content">
+                            <h2><a href="service-detail.html">Elderly Memory Issues </a></h2>
+                            <p>Assessment and support for memory loss and cognitive decline.</p>
+                        </div>
+                        <div class="service-item-btn">
+                            <a href="service-detail.html" class="readmore-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- Page Service Section End -->
+    
+
+    <section class="facts-wrapper">
+    
+        <div class="facts-section">
+    
+            <div class="section-title">
+                <span class="section-badge">
+                    <span class="badge-dot"></span>
+                    Why Patients Choose Us
+                </span>
+    
+                <h2>
+                   Supporting Your Mental Well-Being at Every Step
+                </h2>
+            </div>
+    
+            <div class="facts-grid">
+    
+                <div class="fact-card">
+                    <div class="fact-top">
+                        <div>
+                            <h3>10+</h3>
+                            <div class="fact-label">Years Clinical Experience</div>
+                        </div>
+    
+                        <div class="fact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                                <path d="M4 21a8 8 0 0 1 16 0" />
+                                <path d="M19 8v6" />
+                                <path d="M16 11h6" />
+                            </svg>
+                        </div>
+                    </div>
+    
+                    <div class="fact-bottom">
+                        <p>
+                            Providing trusted mental health and neurological care with proven expertise.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="fact-card">
+                    <div class="fact-top">
+                        <div>
+                            <h3>8+</h3>
+                            <div class="fact-label">Specialized Treatment Areas</div>
+                        </div>
+    
+                        <div class="fact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 2v6" />
+                                <path d="M15 2v6" />
+                                <path d="M6 8h12" />
+                                <path d="M4 22h16" />
+                                <path d="M7 8l-3 11" />
+                                <path d="M17 8l3 11" />
+                            </svg>
+                        </div>
+                    </div>
+    
+                    <div class="fact-bottom">
+                        <p>
+                         Treatment for common mental health and neurological conditions.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="fact-card">
+                    <div class="fact-top">
+                        <div>
+                            <h3>24/7</h3>
+                            <div class="fact-label">Personalized Care</div>
+                        </div>
+    
+                        <div class="fact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 12v3a2 2 0 0 0 2 2h2" />
+                                <path d="M20 12v3a2 2 0 0 1-2 2h-2" />
+                                <path d="M8 17v1a4 4 0 0 0 8 0v-1" />
+                                <path d="M7 10V8a5 5 0 0 1 10 0v2" />
+                                <rect x="2" y="10" width="4" height="5" rx="2" />
+                                <rect x="18" y="10" width="4" height="5" rx="2" />
+                            </svg>
+                        </div>
+                    </div>
+    
+                    <div class="fact-bottom">
+                        <p>
+                            Focused care to help you manage your condition effectively.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="facts-footer">
+    
+                <p>
+               Helping patients overcome mental health and neurological challenges. 
+                </p>
+    
+                <div class="footer-rating">
+                    <span>
+                        Trusted Mental Health Care </span>
+    
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+    
+                    <span><strong>4.9/5 Patient Satisfaction </strong></span>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div>
+
+
+          <!--Using IN-LINE CSS here for creating logo from green to white-->
+          <a href="#" class="nav-logo" aria-label="The Practice home">
+          <img 
+         src="assets/images/logo1.webp" 
+         alt="The Practice" 
+         class="nav-logo-img"
+         style="filter: brightness(0) invert(1);"
+         />
+        </a>
+        </div>
+        <br>
+        <div class="footer-col">
+
+
+          <p class="footer-col-title">Contact</p>
+          <address>
+            <p>letstalk@thepracticetherapy.com</p>
+            <p>125 East 23rd Street, Suite 304</p>
+            <p>New York, NY 10010</p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Quick Links</p>
+          <a href="#">Free Consult Call</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          ©2026 The Practice Therapy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
