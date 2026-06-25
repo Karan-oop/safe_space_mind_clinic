@@ -2622,9 +2622,6 @@ body.about-us-page {
 
 
 
-
-
-
 /* ==========================================
    Contact Us Page
    ========================================== */
@@ -2675,82 +2672,232 @@ body.contact-us-page {
   margin: 0 auto;
 }
 
-.contact-grid {
+/* ── 2-Column Layout ── */
+.contact-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
   margin-bottom: 60px;
+  align-items: stretch;
 }
 
-.contact-info-card {
-  background-color:#99ad7a;
+/* LEFT CARD: Phone + Email */
+.contact-left-card {
+  background-color: #99ad7a;
   border-radius: 20px;
-  padding: 40px 30px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: all 0.4s ease;
+  padding: 36px 28px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.contact-info-card:hover {
-  background-color: #546B41;
-  transform: translateY(-8px);
-  color: #fff;
-}
-
-.contact-info-card:hover h3,
-.contact-info-card:hover p,
-.contact-info-card:hover .contact-link {
-  color: #fff;
-}
-
-.contact-icon-wrap {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #99AD7A;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 24px;
   transition: all 0.3s ease;
 }
 
-.contact-info-card:hover .contact-icon-wrap {
-  background-color: #DCCCAC;
+.contact-left-card h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.contact-left-card p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+}
+
+.contact-left-card .contact-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0f7e6;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-left-card .contact-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.contact-card-sep {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 28px 0;
+}
+
+/* RIGHT CARD: Two clinic addresses */
+.contact-right-card {
+  background-color: #7a9660;
+  border-radius: 20px;
+  padding: 36px 32px;
+  display: grid;
+  gap: 32px;
+}
+
+.contact-right-card h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.clinic-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.clinic-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.clinic-info-row svg {
+  stroke: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.clinic-timing {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f0f7e6;
+  line-height: 1.5;
+}
+
+.clinic-addr {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background-color: #cccccc;
+  border-radius: 24px;
+  padding: 50px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
   color: #546B41;
 }
 
-.contact-info-card h3 {
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(84, 107, 65, 0.2);
+  background-color: #fff;
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 12px;
-  transition: color 0.3s ease;
+  font-size: 15px;
+  color: #1c1c1a;
+  transition: all 0.3s ease;
 }
 
-.contact-info-card p {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  transition: color 0.3s ease;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #546B41;
+  box-shadow: 0 0 0 4px rgba(84, 107, 65, 0.1);
 }
 
-.contact-link {
+.submit-btn {
+  background-color: #546B41;
+  color: #fff;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
-  color: #546b41;
-  text-decoration: none;
-  margin-top: auto;
-  transition: color 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
 }
 
-.contact-info-card:hover .contact-link {
-  color: #DCCCAC;
+.submit-btn:hover {
+  background-color: #99AD7A;
+  transform: translateY(-2px);
+}
+
+
+/* Footer clinic labels */
+.footer-clinic-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #99ad7a;
+  margin: 14px 0 4px;
+  display: block;
+}
+
+footer address {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+/* Fix medical expertise background */
+#medical-expertise {
+  background-color: #99AD7A !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .contact-right-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-wrapper {
+    padding: 30px 20px;
+  }
 }
 
 /* Contact Form */
@@ -2841,8 +2988,16 @@ body.contact-us-page {
    Page Banner (About Us, Contact Us)
    ========================================== */
 #page-banner {
-  padding: 80px 0; /* Remove top padding to touch the top */
-  margin-bottom: 80px; /* Space before next section */
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #page-banner {
+    padding: 80px 0;
+    padding-bottom: 0px;
+    margin-bottom: 80px;
+  }
 }
 
 
@@ -2890,9 +3045,9 @@ body.contact-us-page {
 
 .banner-breadcrumbs {
   font-family: "Cormorant Garamond", serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   letter-spacing: 0.05em;
   margin: 0;
 }
@@ -3612,6 +3767,7 @@ body.contact-us-page {
 
   .blog-section {
     padding: 0px 0 70px;
+    padding-bottom: 0px;
   }
 
   .blog-card-img-wrap {

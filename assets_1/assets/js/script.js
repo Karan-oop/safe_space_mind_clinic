@@ -1,10 +1,10 @@
 //script.js
 
 // TICKER
-const ITEMS=['HIGH CONFLICT COUPLES','TRAUMA RECOVERY','DEPRESSION','ANXIETY','OCD',
-  'LOW SELF ESTEEM / SELF-WORTH ISSUES','DIVORCE MEDIATION','CO-PARENTING','LGBTQIA+',
-  'HIGH CONFLICT COUPLES','TRAUMA RECOVERY','DEPRESSION','ANXIETY','OCD',
-  'LOW SELF ESTEEM / SELF-WORTH ISSUES','DIVORCE MEDIATION','CO-PARENTING','LGBTQIA+'];
+const ITEMS=['Anxiety & Depression','Schizophrenia','Bipolar Disorder','Addiction Treatment','OCD',
+  'Migraine','Epilepsy (Seizures)','Elderly Memory Issues',,
+  'Anxiety & Depression','Schizophrenia','Bipolar Disorder','Addiction Treatment','OCD',
+  'Migraine','Epilepsy (Seizures)','Elderly Memory Issues',];
 const track=document.getElementById('tickerTrack');
 if (track) {
   ITEMS.forEach(t=>{

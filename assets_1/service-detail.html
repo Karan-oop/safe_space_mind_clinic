@@ -23,9 +23,11 @@
                 <a href="blog.html" class="nav-link">Blogs</a>
                 <a href="ContactUs.html" class="nav-link">Contact Us</a>
             </div>
-            <a href="index.html" class="nav-logo" aria-label="The Practice home">
-                <img src="assets/images/logo.webp" alt="The Practice" class="nav-logo-img" />
-            </a>
+        <!--Using IN-LINE CSS here for creating logo from green to white-->
+        <a href="#" class="nav-logo" aria-label="The Safe Space Mind Clinic home">
+          <img src="assets/images/logo.webp" alt="The Safe Space Mind Clinic" class="nav-logo-img"
+            style="filter: brightness(0) invert(0);" />
+        </a>
             <div class="nav-right">
                 <a href="ContactUs.html" class="btn-nav">Book an Appointment</a>
                 <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -66,7 +68,7 @@
             <div class="page-banner-inner">
                 <div class="banner-left">
                     <h1 class="banner-title">Service Details</h1>
-                    <a href="index.html" class="nav-link"class="banner-breadcrumbs">Home &nbsp;/&nbsp;<a href="services.html" class="nav-link" > Services</a>
+                    <p><a href="index.html" class="nav-link"class="banner-breadcrumbs">Home &nbsp;/&nbsp;<a href="services.html" class="nav-link" > Services</a></p>
                 </div>
             </div>
         </div>
@@ -177,7 +179,7 @@
                 <!-- Intro paragraphs -->
                 <p class="sd-body-text reveal">
                     Family medicine plays a vital role in maintaining the overall health and well-being of individuals and
-                    families at every stage of life. It focuses on providing comprehensive, continuous, and personalized
+                    families at every stage of life. It focuses on providing comprehensive, continuous, and personalised
                     healthcare, addressing a wide range of medical needs—from routine check-ups and preventive care to the
                     diagnosis and management of acute and chronic conditions.
                 </p>
@@ -191,7 +193,7 @@
                 <h2 class="sd-section-title reveal">Why choose our family medicine</h2>
                 <p class="sd-section-desc reveal">
                     Choosing the right healthcare provider is essential for long-term well-being, and our family medicine
-                    services are built on trust, experience, and personalized care. We take the time to understand your
+                    services are built on trust, experience, and personalised care. We take the time to understand your
                     medical history, lifestyle, and unique needs to deliver treatments that are both effective and
                     compassionate.
                 </p>
@@ -224,7 +226,7 @@
                 <div class="sd-process-section">
                     <div class="sd-process-header reveal">
                         <h2 class="sd-process-title">Family medicine process</h2>
-                        <p class="sd-process-desc">Our family medicine process is designed to provide seamless, personalized, and
+                        <p class="sd-process-desc">Our family medicine process is designed to provide seamless, personalised, and
                             continuous care for every patient. We follow a structured approach to ensure accurate diagnosis,
                             effective treatment.</p>
                     </div>
@@ -370,47 +372,54 @@
     <!-- END SERVICE DETAIL PAGE -->
 
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-grid">
-        <div>
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
 
-
-          <!--Using IN-LINE CSS here for creating logo from green to white-->
-          <a href="#" class="nav-logo" aria-label="The Practice home">
-          <img 
-         src="assets/images/logo1.webp" 
-         alt="The Practice" 
-         class="nav-logo-img"
-         style="filter: brightness(0) invert(1);"
-         />
+        <!--Using IN-LINE CSS here for creating logo from green to white-->
+        <a href="#" class="nav-logo" aria-label="The Safe Space Mind Clinic home">
+          <img src="assets/images/logo1.webp" alt="The Safe Space Mind Clinic" class="nav-logo-img"
+            style="filter: brightness(0) invert(1);" />
         </a>
-        </div>
-        <br>
-        <div class="footer-col">
+      </div>
+      <br>
+      <div class="footer-col">
 
-
-          <p class="footer-col-title">Contact</p>
-          <address>
-            <p>letstalk@thepracticetherapy.com</p>
-            <p>125 East 23rd Street, Suite 304</p>
-            <p>New York, NY 10010</p>
-          </address>
-        </div>
-        <div class="footer-col">
+        <p class="footer-col-title">Contact</p>
+        <address>
+          <p>+91 9650719719</p>
+          <p>Email: akash@safespacemindclinic.com</p>
+          <p>Shri Ram Complex, Opposite Pillar 1210,
+            Bank Colony, Modinagar</p>
+          <p>Uttar Pradesh - 201201
+            Near Pyare Lal Hospital
+          </p>
+        </address>
+      </div>
+      <div class="footer-col" style="display: flex; gap: 180px; align-items: flex-start; flex-wrap: wrap;">
+        <div>
           <p class="footer-col-title">Quick Links</p>
-          <a href="#">Free Consult Call</a>
+          <a href="AboutUs.html">About</a>
+          <a href="blog.html">Blogs</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms and Conditions</a>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">
-          ©2026 The Practice Therapy. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
 
+        <div>
+          <p class="footer-col-title">Our Services</p>
+          <a href="#">Psychiatry Support</a>
+          <a href="#">Addiction Treatment</a>
+          <a href="#">Neurological Care</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        ©2026 The Safe Space Mind Clinic. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
